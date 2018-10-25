@@ -11,6 +11,7 @@ import java.util.Scanner;
  */
 public class Ejercicio06 {
     public static void main(String[] args) {
+        try{
         Scanner t = new Scanner(System.in);
         
         int N, fin=77;
@@ -28,6 +29,9 @@ public class Ejercicio06 {
            }else{
                 System.out.println("El valor introducido no es mayor o igual de 77");
                 System.out.println("Numero/s introducidos: "+N);
+        }
+        }catch(Exception e){
+            System.out.println("");
         }
 }
 }

@@ -12,8 +12,10 @@ import java.util.Scanner;
 public class Ejercicio05 {
      public static void main(String[] args) {
          
-         double n1,n2,n3,n4,n5;
+         try{
+         double n1,n2,n3,n4,n5; //almacena valores 
          Scanner entrada= new Scanner (System.in);
+         
          
          System.out.print("*Programa java para saber la media de varios numeros* \n");
          System.out.print("Introduce el primer numero: \n");
@@ -31,5 +33,8 @@ public class Ejercicio05 {
          media=((n1+n2+n3+n4+n5)/5);
          System.out.print("La media seria: \n"+media);
          
+}catch(Exception e){
+    System.out.println("Inserta solo numeros");
+}
 }
 }
